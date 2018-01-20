@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CodeReview7</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="test.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<!-- NanBar -->
+	<div class="pos-f-t">
+  			<div class="collapse" id="navbarToggleExternalContent">
+    			<div class="bg-dark p-4">
+      			<div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">Name</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1" id="Name">
+              </div>
+
+             <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">Lastname</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Lastname" aria-label="Lastname" aria-describedby="basic-addon1" id="Lastnamer">
+              </div>
+
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">Gender</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Gender" aria-label="Gender" aria-describedby="basic-addon1" id="Gender">
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">From</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Fromr" aria-label="From" aria-describedby="basic-addon1" id="From">
+              </div>
+
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">Age</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Age" aria-label="Age" aria-describedby="basic-addon1" id="Age">
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon3">Image vanity URL</span>
+                </div>
+                <input type="text" class="form-control" placeholder="https://example.com/users/" id="basic-url" aria-describedby="basic-addon3" id="img">
+              </div>
+              <button type="button" class="btn btn-outline-primary" onclick="mFEMALE()">FEMALE</button>
+                <button type="button" class="btn btn-outline-secondary" onclick="mMALE()">MALE</button>
+                
+                <P id="massage"></P>
+
+
+    		</div>
+  		</div>
+  		<nav class="navbar navbar-dark bg-dark">
+    		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <a href="">Sign In</a>
+      		<span class="navbar-toggler-icon"></span>
+    		</button>  
+  		</nav>
+	</div>
+	<!-- ROW -->
+	<div class="container">
+
+      <main role="main">
+
+        <!-- Example row of columns -->
+        <div class="container">
+        <p class="font-weight-bold">FEMALEs</p>
+        <div class="row" id="Female">
+        </div>
+        <div class="container">
+        <p class="font-weight-bold">MALEs</p>
+        <div class="row" id="Male">
+        </div>
+        
+      </main>
+
+      <!-- Site footer -->
+      <footer class="footer">
+        <p>Code Review 7</p>
+      </footer>
+
+    </div>
+		 
+		
+
+</div>
+<script>
+      
+document.writeln();
+var Female = [{
+    Name:"Ema",
+    Lastname:"Smith",
+    From:"Austria",
+    Live: "Wien",
+    Age: 25,
+    Photo:"Girl-imd/girl1.jpg",  
+
+    },{        
+    Name:"Sophia",
+    Lastname:"Brown",
+    From:"Austria",
+    Live: "Lins",
+    Age: 21,
+    Photo:"Girl-imd/girl2.jpg",
+    },{
+    Name:"Maryam",
+    Lastname:"Hall",
+    From:"Iran",
+    Live: "Salzburg",
+    Age: 24,
+    Photo:"Girl-imd/girl3.jpg",
+
+    },{
+      
+    Name:"Isabella",
+    Lastname:"cooper",
+    From:"Austria",
+    Live:"Grazt",
+    Age: 23,
+    Photo:"Girl-imd/girl4.jpg",
+
+    },{
+      
+    Name:"Mia",  
+    Lastname:"Murphy",
+    From:"Austria",
+    Live: "Boden",
+    Age: 20,
+    Photo:"Girl-imd/girl5.jpg",
+
+    },{ 
+    
+    Name:"Amelia",
+    Lastname:"Hamilton",
+    From:"Austria",
+    Live: "Hollabrunn",
+    Age: 19,
+    Photo:"img/citylights_image.jpg",
+
+    },{
+      
+    Name:"Charlette",
+    Lastname:"Conner",
+    From:"Austria",
+    Live: "Vösendorf",
+    Age: 27,
+    Photo:"Girl-imd/girl7.jpg",
+
+    },{
+      
+    Name:"Aria",
+    Lastname:"Jones",
+    From:"Austria",
+    Live: "Kerms",
+    Age: 29,
+    Photo:"Girl-imd/girl8.jpg",
+
+    },{
+      
+    Name:"Abigail",
+    Lastname:"Quinn",
+    From:"Austria",
+    Live: "Wien",
+    Age: 22,
+    Photo:"Girl-imd/girl9.jpg",
+
+    },{
+      
+    Name:"Emily",
+    Lastname:"Winston",
+    From:"Austria",
+    Live: "Wien",
+    Age: 25,
+    Photo:"Girl-imd/girl10.jpg",
+
+    },{
+      
+    Name:"Madison",
+    Lastname:"Tayler", 
+    From:"Austria",
+    Live: "Wien",
+    Age: 31,
+    Photo:"Girl-imd/girl11.jpg",
+
+    },{
+      
+    Name:"Riley",
+    Lastname:"parker",
+    From:"Austria",
+    Live: "Wien",
+    Age: 28,
+    Photo:"Girl-imd/girl12.jpg",
+
+    },{
+      
+    Name:"Lily",
+    Lastname:"Cassiy",
+    From:"Austria",
+    Live: "Wien",
+    Age: 33,
+    Photo:"Girl-imd/girl13.jpg",
+
+    },{
+      
+    Name:"Natalie",
+    Lastname:"Millers",
+    From:"Austria",
+    Live: "Wien",
+    Age: 25,
+    Photo:"Girl-imd/girl14.jpg",
+
+}];
+
+for(var i=0; i<Female.length; i++){
+document.getElementById("Female").innerHTML += ('<div class="col-lg-4"> <img src=" '+ Female[i].Photo +' " class="img-fluid alt="Responsive image"> <h2>'+ Female[i].Name +'</h2> <p> Lastname : ' + Female[i].Lastname + '</p> <p> From : '+ Female[i].From +' </p> <p> Live : '+ Female[i].Live +' </p> <P> Age : ' + Female[i].Age + '</P> <hr></div>'); 
+};
+function mFEMALE() {
+    Title = document.getElementById("Name").value;
+    Author = document.getElementById("Lastname").value;
+    Genre = document.getElementById("From").value;
+    Publisher = document.getElementById("Live").value;
+    Image = document.getElementById("img");
+    Weight = document.getElementById("Age").value;
+    
+    var elementN = document.getElementById("Name"),
+        elementL = document.getElementById("Lastname"),
+        elementI = document.getElementById("Image");
+    
+    x = ('<div class="col-lg-4"> <img src=" '+ Image +' " class="img-fluid alt="Responsive image"> <h2>'+ Name +'</h2> <p> Lastname : ' + Lastname + '</p> <p> From : '+ From +' </p> <p> Live: '+ Live +' </p><hr></div>'); 
+    
+    y = Female.push(x);
+
+    if (Name == "" || Lastname == "" || Image == "") {
+        document.getElementById("massage").innerHTML = "Please complete the entries...";
+        elementN.classList.add("sorry");
+        elementL.classList.add("sorry");
+
+    } else {
+        document.getElementById("massage").style.color = "#8EEA90";
+        document.getElementById("massage").innerHTML = "Successfully added";
+        elementN.classList.remove("sorry");
+        elementL.classList.remove("sorry");
+        document.getElementById("Female").innerHTML += x;
+        myReset()
+    }
+}
+
+/* ======== ========= */
+var Male = [{
+    Name:"Liam",
+    Lastname:"Jones",
+    From:"Austria",    
+    Live: "Wien",
+    Age: 20,
+    Photo:"Boy-img/boy1.jpg",  
+
+    },{
+        
+    Name:"Zack",
+    Lastname:"Afron",   
+    From:"Austria",
+    Live: "Lins",
+    Age: 23,
+    Photo:"Boy-img/boy2.jpg",
+    },{
+
+    Name:"Oliver",
+    Lastname:"Millers",  
+    From:"Iran",
+    Live: "Salzburg",
+    Age: 25,
+    Photo:"Boy-img/boy3.jpg",
+
+    },{
+      
+    Name:"Ethan",   
+    Lastname:"Thampson",
+    From:"Austria",
+    Live:"Grazt",
+    Age: 26,
+    Photo:"Boy-img/boy4.jpg",
+
+    },{             
+      
+    Name:"Hassan", 
+    Lastname:"Hassani",
+    From:"Oman",
+    Live:"Boden",
+    Age: 21,
+    Photo:"Boy-img/boy5.jpg",
+
+    },{ 
+    
+    Name:"Jackob",
+    Lastname:"Foster",                  
+    From:"Austria",
+    Live: "Hollabrunn",
+    Age: 24,
+    Photo:"Boy-img/boy6.jpg",
+
+    },{
+      
+    Name:"Lucas",
+    Lastname:"Grandy",
+    From:"Austria",          
+    Live: "Vösendorf",
+    Age: 30,
+    Photo:"Boy-img/boy7.jpg",
+
+    },{
+  
+    Name:"Sebastian",
+    Lastname:"Kramer",     
+    From:"Austria",
+    Live: "Kerms",
+    Age: 19,
+    Photo:"Boy-img/boy8.jpg",
+
+    },{
+      
+    Name:"Jackson",         
+    Lastname:"Mills",
+    From:"Austria",
+    Live: "Wien",
+    Age: 24,
+    Photo:"Boy-img/boy9.jpg",
+
+    },{
+      
+    Name:"William",
+    Lastname:"Slater",   
+    From:"Austria",
+    Live: "Wien",
+    Age: 31,
+    Photo:"Boy-img/boy10.jpg",
+
+    },{
+      
+    Name:"Henry",
+    Lastname:"Anderson",  
+    From:"Austria",
+    Live: "Wien",
+    Age: 33,
+    Photo:"Boy-img/boy11.jpg",
+
+    },{
+      
+    Name:"Owen",
+    Lastname:"Carter",   
+    From:"Austria",
+    Live: "Wien",
+    Age: 28,
+    Photo:"Boy-img/boy12.jpg",
+
+    },{
+      
+    Name:"Leo",         
+    Lastname:"Lee",
+    From:"Austria",
+    Live: "Wien",
+    Age: 29,
+    Photo:"Boy-img/boy13.jpg",
+
+    },{
+      
+    Name:"Mohammad",
+    Lastname:"Golsar",
+    From:"Iran",
+    Live: "Wien",
+    Age: 34,
+    Photo:"Boy-img/boy14.jpg",
+
+}];
+
+for(var i=0; i<Male.length; i++){
+document.getElementById("Male").innerHTML += ('<div class="col-lg-4"> <img src=" '+ Male[i].Photo +' " class="img-fluid alt="Responsive image"> <h2>'+ Male[i].Name +'</h2> <p> Lastname : ' + Male[i].Lastname + '</p> <p> From : '+ Male[i].From +' </p> <p> Live : '+ Male[i].Live +' </p> <P> Age : ' + Male[i].Age + '</P> <hr></div>'); 
+};
+function mMALE() {
+    Name = document.getElementById("Name").value;
+    Lastname = document.getElementById("Lastname").value;
+    From = document.getElementById("From").value;
+    Live = document.getElementById("Live").value;
+    Image = document.getElementById("img");
+    Age = document.getElementById("Age").value;
+    
+    var elementN = document.getElementById("Name"),
+        elementL = document.getElementById("Lastname"),
+        elementI = document.getElementById("Image");
+    
+    x = ('<div class="col-lg-4"> <img src=" '+ Image +' " class="img-fluid alt="Responsive image"> <h2>'+ Name +'</h2> <p> Lastname : ' + Lastname + '</p> <p> From : '+ From +' </p> <p> Live: '+ Live +' </p><hr></div>'); 
+    
+    y = Female.push(x);
+
+    if (Name == "" || Lastname == "" || Image == "") {
+        document.getElementById("massage").innerHTML = "Please complete the entries...";
+        elementN.classList.add("sorry");
+        elementL.classList.add("sorry");
+
+    } else {
+        document.getElementById("massage").style.color = "#8EEA90";
+        document.getElementById("massage").innerHTML = "Successfully added";
+        elementN.classList.remove("sorry");
+        elementL.classList.remove("sorry");
+        document.getElementById("Female").innerHTML += x;
+        myReset()
+    }
+}
+
+</script>
+
+<script type="text/javascript" src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE >
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Dating Site</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<style type="text/css">
+		
+header{
+	padding: 1em;
+	background-color:#702F85;
+	text-align: center;
+	height: 150px;
+}
+body  {
+    background-image: url("IMG/backimg.jpg");
+}
+
+
+footer{
+	padding: 1em;
+	background-color:#702F85;
+	clear: left; 
+	text-align: center;
+}
+	</style>
+</head>
+<body>
+	<div class="container">
+<!-- /header -->
+	<header>
+		<img width="450px" src="IMG/logo-coders-dating.png">
+	</header>
+
+	
+		
+		<div class="container" id="bigList"></div>
+		</div>
+		<!--javascriptpar-->	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!--footer of page-->
+	<hr>
+		<footer>
+		<img src="IMG/logo-coders-dating-footer.png">
+		<script>
+			class Mainpage{
+	constructor(Name,Lastname,From,Live,Age,imageUrl){
+		this.Name = Name;
+		this.Lastname = Lastname;
+		this.From = From;
+		this.Live = Live;
+		this.Age = Age;
+		this.imageUrl = imageUrl;
+	}
+}
+render(){
+	let msg =`
+	<div class="col-md4">
+	<img src=${this.imageUrl} alt="Image" style="object-fit:contain">
+	<p>Name : ${this.Name}</p>
+	<P>Lastname : ${this.Lastname}</P>
+	<p>From : ${this.From}</p>
+	<P>Live : ${this.Live}</p>
+	<p>Age : ${this.Age}</p>
+	</div>`
+	return msg;
+
+}
+
+class Female extends Mainpage{
+	constructor(Name,Lastname,From,Live,Age,imageUrl){
+		super(Name,Lastname,From,Live,Age,imageUrl);
+	}
+}
+
+render(){
+	let msg =`
+	<div class="row">
+	<div class="col-md4">
+	<img src=${this.imageUrl} alt="Image" style="object-fit:contain">
+	<p>Name : ${this.Name}</p>
+	<P>Lastname : ${this.Lastname}</P>
+	<p>From : ${this.From}</p>
+	<P>Live : ${this.Live}</p>
+	<p>Age : ${this.Age}</p>
+	</div>
+	</div>`
+	return msg;
+
+}
+
+class Male extends Mainpage{
+	constructor(Name,Lastname,From,Live,Age,imageUrl){
+		super(Name,Lastname,From,Live,Age,imageUrl);
+	}
+}
+
+render(){
+	let msg =`
+	<div class="row">
+	<div class="col-md4">
+	<img src=${this.imageUrl} alt="Image" style="object-fit:contain">
+	<p>Name : ${this.Name}</p>
+	<P>Lastname : ${this.Lastname}</P>
+	<p>From : ${this.From}</p>
+	<P>Live : ${this.Live}</p>
+	<p>Age : ${this.Age}</p>
+	</div>
+	</div>`
+	return msg;
+
+}
+var allpages=[
+		new Female("Ema","Smith","Austria","Wien","Girl-imd/girl1.jpg",25),
+		new Female("Sophia","Brown","Austria","Lins","Girl-imd/girl2.jpg",21),
+		new Female("Maryam","Hall","Iran","Salzburg","Girl-imd/girl3.jpg",24),
+		new Female("Isabella","cooper","Austria","Grazt","Girl-imd/girl4.jpg",23),
+		new Female("Mia","Murphy","Austria","Boden","Girl-imd/girl5.jpg",20),
+		new Female("Amelia","Hamilton","Austria","Hollabrunn","Girl-imd/girl6.jpg",19),
+		new Female("Charlette","Conner","Austria","Vösendorf","Girl-imd/girl7.jpg",27),
+		new Female("Aria","Jones","Austria","Kerms","Girl-imd/girl8.jpg",29),
+		new Female("Abigail","Quinn","Austria","Wien","Girl-imd/girl9.jpg",22),
+		new Female("Emily","Winston","Austria","Wien","Girl-imd/girl10.jpg",25),
+		new Female("Madison","Tayler","Austria","Wien","Girl-imd/girl11.jpg",31),
+		new Female("Riley","parker","Austria","Wien","Girl-imd/girl12.jpg",28),
+		new Female("Lily","Cassiy","Austria","Wien","Girl-imd/girl13.jpg",33),
+		new Female("Natalie","Millers","Austria","Wien","Girl-imd/girl14.jpg",25),
+		new Male("Liam","Jones","Austria","Wien","Boy-img/boy1.jpg",20),
+		new Male("Zack","Afron","Austria","Lins","Boy-img/boy2.jpg",23),
+		new Male("Oliver","Millers","Austria","Salzburg","Boy-img/boy3.jpg",25),
+		new Male("Ethan","Thampson","Austria","Grazt","Boy-img/boy4.jpg",26),
+		new Male("Hassan","Hassani","Oman","Boden","Boy-img/boy5.jpg",21),
+		new Male("Jackob","Foster","Austria","Hollabrunn","Boy-img/boy6.jpg",24),
+		new Male("Lucas","Grandy","Austria","Vösendorf","Boy-img/boy7.jpg",30),
+		new Male("Sebastian","Kramer","Austria","Kerms","Boy-img/boy8.jpg",19),
+		new Male("Jackson","Mills","Austria","Wien","Boy-img/boy9.jpg",24),
+		new Male("William","Slater","Austria","Wien","Boy-img/boy10.jpg",31),
+		new Male("Henry","Anderson","Austria","Wien","Boy-img/boy11.jpg",33),
+		new Male("Owen","Carter","Austria","Wien","Boy-img/boy12.jpg",28),
+		new Male("Leo","Lee","Austria","Wien","Boy-img/boy13.jpg",29),
+		new Male("Mohammad","Golsar","Iran","Wien","Boy-img/boy14.jpg",34),
+
+];
+function showBigList() {
+  let bigList = document.getElementById("bigList");
+  for (let i = 0; i < allpages.length; i++) {
+    bigList.innerHTML += allpages[i].render();
+  }
+}
+
+function showOnlyFemale() {
+  let bigList = document.getElementById("bigList");
+  for (let i = 0; i < allpages.length; i++) {
+
+    if (allpages[i].constructor.name == "Female") {
+    bigList.innerHTML += allpages[i].render();
+    }
+  }
+}
+
+function showOnlyMale() {
+  let bigList = document.getElementById("bigList");
+  for (let i = 0; i < allpages.length; i++) {
+
+    if (allpages[i].constructor.name == "Male") {
+    bigList.innerHTML += allpages[i].render();
+    }
+  }
+}
+
+
+
+			showOnlyFemale();
+		</script>
+		</footer>
+	</div>
+</body>
+</html>
